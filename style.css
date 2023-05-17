@@ -1,0 +1,100 @@
+html {
+    height: 100vh;
+}
+
+body {
+    background-color: #000000;
+    color: #0017a0;
+    border: none;
+    font-size: 10pt;
+    font-family: "Consolas", monospace;
+    margin: 0;
+    overflow: hidden;
+}
+
+.main {
+    width: 212px;
+    text-align: center;
+    line-height: 50px;
+    border-right: 5px white ridge;
+    margin-right: 4px;
+    background-image: url("https://themediumkey.neocities.org/surfacesAlpha.png");
+    background-color: blue;
+    height: 100vh;
+    overflow: hidden;
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.page {
+    width: calc(100vw - 212px);
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+a:link,
+a:active {
+    color: white;
+}
+
+a:visited {
+    color: grey;
+}
+
+a:hover {
+    color: #CCCC00;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+td {
+    font-size: 10pt;
+}
+
+#welcome {
+    text-align: center;
+}
+
+#welcomeText {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.divider {
+    height: 2px;
+    background-color: #222244;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.updated {
+    width: 212px;
+    position: absolute;
+    bottom: -18px;
+}
+
+@keyframes slide {
+    from {background-position: 0px 0px;}
+    to {background-position: -100px 100px;}
+}
+
+.hide {
+    opacity: 0;
+}
+
+ul {
+  list-style-type: none;
+}

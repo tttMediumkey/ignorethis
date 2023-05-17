@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="Mediumkey's Page" property="og:title" />
+    <meta content="This is still work in progress" property="og:description" />
+    <meta content="https://themediumkey.neocities.org/" property="og:url" />
+    <meta content="https://themediumkey.neocities.org/SAD.png" property="og:image" />
+    <meta content="#0017a0" data-react-helmet="true" name="theme-color" /> 
+    <meta charset="utf-8">
+    <link REL="stylesheet" TYPE="text/css" href="style.css">
+    <link rel="Icon" href='https://cdn.discordapp.com/attachments/859423676457287730/990616816881664060/unknown.png'>
+    <title>Mediumkey's Page</title>
+    <style>
+    p {
+  font-size: 11px;
+}
+    </style>
+</head>
+
+<div class="wrapper">
+    <div class="main">
+        <img src="/joke.png" width="100%" style="margin-top: 50px"><br>
+        <a onclick="main()">Main Page</a><br>
+        <a onclick="aboutme()">About Me</a><br>
+        <a onclick="blogs()">Blogs</a><br>
+        <a onclick="link()">Links</a><br>
+        <a onclick="things()">Things I made</a><br>
+        <a onclick="friends()">Friends' websites</a><br>
+        <a onclick="roblox()">Roblox Goodies</a><br>
+        <a onclick="randomimg()">Show random image</a><br>
+        <div style="width: 300px;" class="divider"></div>
+        <br>
+        <audio controls autoplay loop>
+            <source src="/DnB1995.mp3" type="audio/mp3">
+        </audio>
+        <p style="color: white; margin-top: -25px">Cruising Detroid - Mouly Studio Set</p>
+        <br>
+        <a href="https://dillabyte.neocities.org//"><img src="https://themediumkey.neocities.org/whitewolffunny.png" style="width: 50%"></a><a href="https://ropro.io"><img src="/roprobutton.png" style="width: 50%"></a>
+        <br>
+        <p class="updated" style="text-shadow: 2px 2px 5px white;">last updated: 2023/05/15</p>
+    </div>
+    <iframe src="https://themediumkey.neocities.org/Main" frameBorder="0" class="page"></iframe>
+</div>
+
+
+<script>
+    var source = document.getElementsByClassName('page');
+    var src = source[0].getAttribute("src");
+
+    function link() {
+        var newsrc = source[0].setAttribute("src", 'iframe/links.html');
+    }
+
+    function main() {
+        var newsrc = source[0].setAttribute("src", 'https://themediumkey.neocities.org/Main');
+    }
+
+    function aboutme() {
+        var newsrc = source[0].setAttribute("src", 'https://themediumkey.neocities.org/aboutme');
+    }
+
+    function blogs() {
+        var newsrc = source[0].setAttribute("src", 'iframe/interests.html');
+    }
+
+    function things() {
+        var newsrc = source[0].setAttribute("src", 'iframe/changelogs.html');
+    }
+
+    function friends() {
+        var newsrc = source[0].setAttribute("src", 'iframe/friends.html');
+    }
+
+    function randomimg() {
+        var newsrc = source[0].setAttribute("src", 'iframe/randomimage.html');
+    }
+    
+    function roblox() {
+        var newsrc = source[0].setAttribute("src", 'iframe/oldver.html');
+    }
+    </script>
+
+</html>
